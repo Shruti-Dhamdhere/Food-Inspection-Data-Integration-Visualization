@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_O53y4NFQEe6NxMCXFNZDiA">
+    <contextParameter comment="" name="Dallas_01_File" prompt="Dallas_01_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="C:/Users/Nitish Belagali/Downloads/cleaned_restaurant_inspections1.tsv" xmi:id="_O54Z8NFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_Encoding" prompt="Dallas_01_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="US-ASCII" xmi:id="_O54Z8dFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_RowSeparator" prompt="Dallas_01_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_O54Z8tFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_FieldSeparator" prompt="Dallas_01_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_O54Z89FQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_Header" prompt="Dallas_01_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_O54Z9NFQEe6NxMCXFNZDiA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Dev" xmi:id="_O54Z9dFQEe6NxMCXFNZDiA">
+    <contextParameter comment="" name="Dallas_01_File" prompt="Dallas_01_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="C:/Users/Nitish Belagali/Downloads/cleaned_restaurant_inspections1.tsv" xmi:id="_O54Z9tFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_Encoding" prompt="Dallas_01_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="US-ASCII" xmi:id="_O54Z99FQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_RowSeparator" prompt="Dallas_01_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_O54Z-NFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_FieldSeparator" prompt="Dallas_01_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_O54Z-dFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_Header" prompt="Dallas_01_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_O54Z-tFQEe6NxMCXFNZDiA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Prod" xmi:id="_O54Z-9FQEe6NxMCXFNZDiA">
+    <contextParameter comment="" name="Dallas_01_File" prompt="Dallas_01_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="C:/Users/Nitish Belagali/Downloads/cleaned_restaurant_inspections1.tsv" xmi:id="_O54Z_NFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_Encoding" prompt="Dallas_01_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="US-ASCII" xmi:id="_O54Z_dFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_RowSeparator" prompt="Dallas_01_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_O54Z_tFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_FieldSeparator" prompt="Dallas_01_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_O54Z_9FQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_Header" prompt="Dallas_01_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_O54aANFQEe6NxMCXFNZDiA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Test" xmi:id="_O54aAdFQEe6NxMCXFNZDiA">
+    <contextParameter comment="" name="Dallas_01_File" prompt="Dallas_01_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="C:/Users/Nitish Belagali/Downloads/cleaned_restaurant_inspections1.tsv" xmi:id="_O54aAtFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_Encoding" prompt="Dallas_01_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="US-ASCII" xmi:id="_O54aA9FQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_RowSeparator" prompt="Dallas_01_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_O54aBNFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_FieldSeparator" prompt="Dallas_01_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_O54aBdFQEe6NxMCXFNZDiA"/>
+    <contextParameter comment="" name="Dallas_01_Header" prompt="Dallas_01_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_O54aBtFQEe6NxMCXFNZDiA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6ffbbb71-136d-40ce-a3fc-25e58b93a2f9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dLzsdm3ymyJDEEOPjoKSUjJYFZojkDSeM8JidRNPyrF/eS7PqpETR5UaGgeqKjOkvuvJjAO72+QC&#13;
+lU9BvJACyA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_af09e5b6-d34c-46b6-b5ec-532c9533a9d2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fWrJ/Z4DAEJxXO8cdWwUBb7UIACU3lPPoWFGeQaM+SkPh59z5p2/d/PIui/ikPjqlVXsd3UtOHzz&#13;
+cAsUJylqbQ==</DigestValue></Reference></SignedInfo><SignatureValue>LB2OE7m2ET+S/l6QXmgS1w6xeyNwU+O5qrnUdcPSYWRnUwIueiL47uNU5g+JK7gxz6mP2c2f9vTM&#13;
+4NLC1RiFCP1VVMf2WLJCf/+bRjsZRscvhCSeMbme2XUeGUdC80+YGY/Q2pS6bpM/px8cXxl1FEAx&#13;
+nxlEdXOrueSMdiKo2ugRBGnnqz3Fk1bUJNMjXnSzxXn+lcnm+52Nca3X3q0TKcjIVpfZvUkh94H4&#13;
+nd2Q2xk0D4nlVQF6RH0H6wZoluKMpN0WQycUM749juPcDm5PdpJshC/VRMNk2z+llvY9XGNNZT+n&#13;
+Vw1yL1RbGjRpVAa3CJzDZXB2KY0cWhJpKOOgOQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_af09e5b6-d34c-46b6-b5ec-532c9533a9d2" Target="#_6ffbbb71-136d-40ce-a3fc-25e58b93a2f9"><Timestamp>2024-02-22 07:01:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" internalId="_MRRlQNHaEe6Dubw9z92bSQ" name="Chicago_01_FieldSeparator" prompt="Chicago_01_FieldSeparator?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="&quot;\t&quot;"/>
+    <contextParameter comment="" internalId="_MRRlQdHaEe6Dubw9z92bSQ" name="Chicago_01_File" prompt="Chicago_01_File?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_File" value="C:/Users/Nitish Belagali/Downloads/Food_Inspections_20240222.tsv"/>
+    <contextParameter comment="" internalId="_MRRlQtHaEe6Dubw9z92bSQ" name="Chicago_01_RowSeparator" prompt="Chicago_01_RowSeparator?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="_MRRlQ9HaEe6Dubw9z92bSQ" name="Chicago_01_Header" prompt="Chicago_01_Header?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_MRRlRNHaEe6Dubw9z92bSQ" name="Chicago_01_Encoding" prompt="Chicago_01_Encoding?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="_MRRlRdHaEe6Dubw9z92bSQ" name="CFI_db_Server" prompt="CFI_db_Server?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="DESKTOP-JVVN42L"/>
+    <contextParameter comment="" internalId="_MRRlRtHaEe6Dubw9z92bSQ" name="CFI_db_Schema" prompt="CFI_db_Schema?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_MRRlR9HaEe6Dubw9z92bSQ" name="CFI_db_AdditionalParams" prompt="CFI_db_AdditionalParams?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_MRRlSNHaEe6Dubw9z92bSQ" name="CFI_db_Port" prompt="CFI_db_Port?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_MRRlSdHaEe6Dubw9z92bSQ" name="CFI_db_Login" prompt="CFI_db_Login?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_MRRlStHaEe6Dubw9z92bSQ" name="CFI_db_Password" prompt="CFI_db_Password?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_Password" value="enc:system.encryption.key.v1:prv4XpnwKRtk3mQ44J6vMIuVi4aIkZAZuhLvBTuqL6/3UCaR"/>
+    <contextParameter comment="" internalId="_MRRlS9HaEe6Dubw9z92bSQ" name="CFI_db_Database" prompt="CFI_db_Database?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="master"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter comment="" internalId="_MRRlTNHaEe6Dubw9z92bSQ" name="Chicago_01_FieldSeparator" prompt="Chicago_01_FieldSeparator?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="&quot;\t&quot;"/>
+    <contextParameter comment="" internalId="_MRRlTdHaEe6Dubw9z92bSQ" name="Chicago_01_File" prompt="Chicago_01_File?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_File" value="C:/Users/Nitish Belagali/Downloads/Food_Inspections_20240222.tsv"/>
+    <contextParameter comment="" internalId="_MRRlTtHaEe6Dubw9z92bSQ" name="Chicago_01_RowSeparator" prompt="Chicago_01_RowSeparator?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="_MRRlT9HaEe6Dubw9z92bSQ" name="Chicago_01_Header" prompt="Chicago_01_Header?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_MRRlUNHaEe6Dubw9z92bSQ" name="Chicago_01_Encoding" prompt="Chicago_01_Encoding?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="_MRRlUdHaEe6Dubw9z92bSQ" name="CFI_db_Server" prompt="CFI_db_Server?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="DESKTOP-JVVN42L"/>
+    <contextParameter comment="" internalId="_MRRlUtHaEe6Dubw9z92bSQ" name="CFI_db_Schema" prompt="CFI_db_Schema?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_MRRlU9HaEe6Dubw9z92bSQ" name="CFI_db_AdditionalParams" prompt="CFI_db_AdditionalParams?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_MRRlVNHaEe6Dubw9z92bSQ" name="CFI_db_Port" prompt="CFI_db_Port?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_MRRlVdHaEe6Dubw9z92bSQ" name="CFI_db_Login" prompt="CFI_db_Login?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_MRSMUNHaEe6Dubw9z92bSQ" name="CFI_db_Password" prompt="CFI_db_Password?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_Password" value="enc:system.encryption.key.v1:UMVu5uoJlUJ2mgq8x4eseYGH4aZ83i+xxSgxmarlHBcavk/p"/>
+    <contextParameter comment="" internalId="_MRSMUdHaEe6Dubw9z92bSQ" name="CFI_db_Database" prompt="CFI_db_Database?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="master"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Dev">
+    <contextParameter comment="" internalId="_MRSMUtHaEe6Dubw9z92bSQ" name="Chicago_01_FieldSeparator" prompt="Chicago_01_FieldSeparator?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="&quot;\t&quot;"/>
+    <contextParameter comment="" internalId="_MRSMU9HaEe6Dubw9z92bSQ" name="Chicago_01_File" prompt="Chicago_01_File?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_File" value="C:/Users/Nitish Belagali/Downloads/Food_Inspections_20240222.tsv"/>
+    <contextParameter comment="" internalId="_MRSMVNHaEe6Dubw9z92bSQ" name="Chicago_01_RowSeparator" prompt="Chicago_01_RowSeparator?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="_MRSMVdHaEe6Dubw9z92bSQ" name="Chicago_01_Header" prompt="Chicago_01_Header?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_MRSMVtHaEe6Dubw9z92bSQ" name="Chicago_01_Encoding" prompt="Chicago_01_Encoding?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="_MRSMV9HaEe6Dubw9z92bSQ" name="CFI_db_Server" prompt="CFI_db_Server?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="DESKTOP-JVVN42L"/>
+    <contextParameter comment="" internalId="_MRSMWNHaEe6Dubw9z92bSQ" name="CFI_db_Schema" prompt="CFI_db_Schema?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_MRSMWdHaEe6Dubw9z92bSQ" name="CFI_db_AdditionalParams" prompt="CFI_db_AdditionalParams?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_MRSMWtHaEe6Dubw9z92bSQ" name="CFI_db_Port" prompt="CFI_db_Port?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_MRSMW9HaEe6Dubw9z92bSQ" name="CFI_db_Login" prompt="CFI_db_Login?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_MRSMXNHaEe6Dubw9z92bSQ" name="CFI_db_Password" prompt="CFI_db_Password?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_Password" value="enc:system.encryption.key.v1:Musw8VAVbqBLvImjJFDGu9LwWbDlnA+AbpNkzMzgJz0u6v5e"/>
+    <contextParameter comment="" internalId="_MRSMXdHaEe6Dubw9z92bSQ" name="CFI_db_Database" prompt="CFI_db_Database?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="master"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter comment="" internalId="_MRSMXtHaEe6Dubw9z92bSQ" name="Chicago_01_FieldSeparator" prompt="Chicago_01_FieldSeparator?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="&quot;\t&quot;"/>
+    <contextParameter comment="" internalId="_MRSMX9HaEe6Dubw9z92bSQ" name="Chicago_01_File" prompt="Chicago_01_File?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_File" value="C:/Users/Nitish Belagali/Downloads/Food_Inspections_20240222.tsv"/>
+    <contextParameter comment="" internalId="_MRSMYNHaEe6Dubw9z92bSQ" name="Chicago_01_RowSeparator" prompt="Chicago_01_RowSeparator?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="_MRSMYdHaEe6Dubw9z92bSQ" name="Chicago_01_Header" prompt="Chicago_01_Header?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_MRSMYtHaEe6Dubw9z92bSQ" name="Chicago_01_Encoding" prompt="Chicago_01_Encoding?" promptNeeded="false" repositoryContextId="_1_NjUNHXEe6Dubw9z92bSQ" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="_MRSMY9HaEe6Dubw9z92bSQ" name="CFI_db_Server" prompt="CFI_db_Server?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="DESKTOP-JVVN42L"/>
+    <contextParameter comment="" internalId="_MRSMZNHaEe6Dubw9z92bSQ" name="CFI_db_Schema" prompt="CFI_db_Schema?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_MRSMZdHaEe6Dubw9z92bSQ" name="CFI_db_AdditionalParams" prompt="CFI_db_AdditionalParams?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_MRSMZtHaEe6Dubw9z92bSQ" name="CFI_db_Port" prompt="CFI_db_Port?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_MRSMZ9HaEe6Dubw9z92bSQ" name="CFI_db_Login" prompt="CFI_db_Login?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_MRSMaNHaEe6Dubw9z92bSQ" name="CFI_db_Password" prompt="CFI_db_Password?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_Password" value="enc:system.encryption.key.v1:vWaNDgIpIrjp4EzykH8Ru3KJ6edOUT7nDx8f7wXqnVcHww+z"/>
+    <contextParameter comment="" internalId="_MRSMadHaEe6Dubw9z92bSQ" name="CFI_db_Database" prompt="CFI_db_Database?" promptNeeded="false" repositoryContextId="_Mz-UkNHYEe6Dubw9z92bSQ" type="id_String" value="master"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:6ZrpNL+JoIyUKvByn5SfJ7h/O+tkNqbT3rQHDNUP"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/Nitish Belagali/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4ofO/jL5pU5sw7mvJT5dlX2uCOoa/v+bk5z+E6Xx"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_cqYbAMSPEe6haKymduKsvw" name="DataOperation"/>
+    <routinesParameter id="_cqfvwMSPEe6haKymduKsvw" name="Mathematical"/>
+    <routinesParameter id="_cqr9AMSPEe6haKymduKsvw" name="Numeric"/>
+    <routinesParameter id="_cqxckMSPEe6haKymduKsvw" name="Relational"/>
+    <routinesParameter id="_cpJr8MSPEe6haKymduKsvw" name="SQLike"/>
+    <routinesParameter id="_cq3jMMSPEe6haKymduKsvw" name="StringHandling"/>
+    <routinesParameter id="_cq-Q4MSPEe6haKymduKsvw" name="TalendDataGenerator"/>
+    <routinesParameter id="_cra80MSPEe6haKymduKsvw" name="TalendDate"/>
+    <routinesParameter id="_csIHcMSPEe6haKymduKsvw" name="TalendStringUtil"/>
+    <routinesParameter id="_csBZwMSPEe6haKymduKsvw" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_3XtnUNHXEe6Dubw9z92bSQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" show="false" value=""/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Chicago_01_File"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.Chicago_01_RowSeparator"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="context.Chicago_01_RowSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.Chicago_01_FieldSeparator"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="context.Chicago_01_Header"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_3XtnUNHXEe6Dubw9z92bSQ - metadata"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Users/Nitish Belagali/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DBA_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AKA_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="License"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Facility_Type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Risk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Zip"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_Type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Results"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Latitude"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Longitude"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Location"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violations"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.Chicago_01_Encoding"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DBA_Name"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AKA_Name"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="License"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Facility_Type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Risk"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Zip"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_Date"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_Type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Results"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Latitude"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Longitude"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Location"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violations"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="Chicago_01"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="20" name="Inspection_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="DBA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="AKA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="License" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Facility_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Risk" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Zip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Inspection_Date" nullable="true" pattern="&quot;MM/dd/yy&quot;" precision="2" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Inspection_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Results" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Latitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Longitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="300" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100000" name="Violations" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="20" name="Inspection_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="DBA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="AKA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="License" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Facility_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Risk" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Zip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Inspection_Date" nullable="true" pattern="&quot;MM/dd/yy&quot;" precision="2" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Inspection_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Results" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Latitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Longitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="300" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100000" name="Violations" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_KqDCYNHSEe6Dubw9z92bSQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_Chicago" name="stg_Chicago">
+      <column comment="" defaultValue="" key="false" length="20" name="Inspection_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="DBA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="AKA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="License" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Facility_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Risk" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Zip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Inspection_Date" nullable="true" pattern="&quot;MM/dd/yy&quot;" precision="2" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Inspection_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Results" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Latitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Longitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="100000" name="Violations" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DI_CreateDate" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DI_WorkflowFileName" nullable="true" originalLength="100" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="countOfViolations" nullable="true" originalLength="100" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ResultScore" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="RiskScore" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="TotalScore" nullable="true" originalLength="1000" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="((StringHandling.LEN(row1.Violations) - StringHandling.LEN(StringHandling.EREPLACE(row1.Violations, &quot;\\|&quot;, &quot;&quot;))) + 1) * 2 " name="var1" type="id_Integer"/>
+        <mapperTableEntries expression="row1.Results.equals(&quot;Fail&quot;) ? 70 :&#13;&#10;(row1.Results.equals(&quot;Pass w/ Conditions&quot;) ? 40 :&#13;&#10;(row1.Results.equals(&quot;Pass&quot;) ? 0 : 0)) " name="var2" type="id_Integer"/>
+        <mapperTableEntries expression="row1.Risk.equals(&quot;Risk 1 (High)&quot;) ? 30 :&#13;&#10;(row1.Risk.equals(&quot;Risk 3 (Low)&quot;) ? 10 :&#13;&#10;(row1.Risk.equals(&quot;Risk 2 (Medium)&quot;) ? 20 : 0)) " name="var3" type="id_Integer"/>
+        <mapperTableEntries expression="Math.min(&#13;&#10;    (&#13;&#10;        ((StringHandling.LEN(row1.Violations) - StringHandling.LEN(StringHandling.EREPLACE(row1.Violations, &quot;\\|&quot;, &quot;&quot;))) + 1) * 2&#13;&#10;    ) +&#13;&#10;    (&#13;&#10;        row1.Results.equals(&quot;Fail&quot;) ? 70 :&#13;&#10;        (row1.Results.equals(&quot;Pass w/ Conditions&quot;) ? 40 :&#13;&#10;        (row1.Results.equals(&quot;Pass&quot;) ? 0 : 0))&#13;&#10;    ) +&#13;&#10;    (&#13;&#10;        row1.Risk.equals(&quot;Risk 1 (High)&quot;) ? 30 :&#13;&#10;        (row1.Risk.equals(&quot;Risk 3 (Low)&quot;) ? 10 :&#13;&#10;        (row1.Risk.equals(&quot;Risk 2 (Medium)&quot;) ? 20 : 0))&#13;&#10;    ),&#13;&#10;    100&#13;&#10;) " name="var4" type="id_Integer"/>
+      </varTables>
+      <outputTables name="stg_Chicago" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.Inspection_ID" name="Inspection_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.DBA_Name" name="DBA_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.AKA_Name" name="AKA_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.License" name="License" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.Facility_Type" name="Facility_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Risk.equals(&quot;All&quot;) ? &quot;All&quot; : &#13;&#10;StringHandling.RIGHT(row1.Risk, StringHandling.LEN(row1.Risk) - StringHandling.INDEX(row1.Risk, &quot;(&quot;) - 1).replaceAll(&quot;[()]&quot;, &quot;&quot;) " name="Risk" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Address" name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.City" name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.State" name="State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Zip" name="Zip" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.Inspection_Date" name="Inspection_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Inspection_Type" name="Inspection_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Results" name="Results" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Latitude" name="Latitude" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.Longitude" name="Longitude" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.Violations" name="Violations" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="DI_CreateDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="context.Chicago_01_File " name="DI_WorkflowFileName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.var1 " name="countOfViolations" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="Var.var2 " name="ResultScore" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="Var.var3 " name="RiskScore" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="Var.var4 " name="TotalScore" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Inspection_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DBA_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AKA_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="License" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Facility_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Risk" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="State" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Zip" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Inspection_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Inspection_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Results" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Latitude" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="Longitude" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="Location" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Violations" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_-CsRkNHXEe6Dubw9z92bSQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CFI_db_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CFI_db_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.CFI_db_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CFI_db_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.CFI_db_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tR2h6sNSuG9RaMO6CsI7F8y4HKMbJEkYJBSMbkvBDkyCdj8GdlC3ScoL2RH4dtnrmhZ9"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_chicago_fi&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="Inspection_ID"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CFI_db_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DBA_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AKA_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="License"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Facility_Type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Risk"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Zip"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_Date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_Type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Results"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Latitude"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Longitude"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violations"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_CreateDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_WorkflowFileName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="countOfViolations"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ResultScore"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RiskScore"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TotalScore"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="CFI_db"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_Chicago" name="tDBOutput_1">
+      <column comment="" defaultValue="" key="false" length="20" name="Inspection_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="DBA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="AKA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="License" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Facility_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Risk" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Zip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Inspection_Date" nullable="true" pattern="&quot;MM/dd/yy&quot;" precision="2" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Inspection_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Results" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Latitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Longitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="100000" name="Violations" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DI_CreateDate" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DI_WorkflowFileName" nullable="true" originalLength="100" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="countOfViolations" nullable="true" originalLength="100" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ResultScore" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="RiskScore" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="TotalScore" nullable="true" originalLength="1000" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="stg_Chicago" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="20" name="Inspection_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="DBA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="AKA_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="License" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Facility_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Risk" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Zip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Inspection_Date" nullable="true" pattern="&quot;MM/dd/yy&quot;" precision="2" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Inspection_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Results" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Latitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Longitude" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="100000" name="Violations" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DI_CreateDate" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DI_WorkflowFileName" nullable="true" originalLength="100" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="countOfViolations" nullable="true" originalLength="100" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ResultScore" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="RiskScore" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="TotalScore" nullable="true" originalLength="1000" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="stg_Chicago" lineStyle="0" metaname="stg_Chicago" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="stg_Chicago"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c3b750cb-fcb7-4236-901d-bf0319a81600"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gN2QRTHqLy+uO4n5Mcoc5EZCveGuOAnWrUG8/0oN8UfWhI5W+fIGwKzth00uvq/MdwYuBCZF02I1&#13;
+qhi+ddhZzA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_66d92d5f-312e-478e-92e9-a6d547d75380"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>p+i2OVev7ddrOsO81AHzuhi/DHRKMpyo4g6PJxCngJOaPd9e0G+H0E7wRdLyEX/oHfqRrIB2MH8Q&#13;
+OjuGrVNdew==</DigestValue></Reference></SignedInfo><SignatureValue>PmXzH6pF08OwuR+CJMGMJwcuZYSLld9shymn+GKJ7b4lABcCzO6vpJV05zWS8Z0YtG8XNXe5A54o&#13;
+zlDO6bJsqDaAKDiX5iBiZg2sgi5pY1uunT7ODWyYSqTPdqix6GBsFHi8MHgGzZ/HFDI0C2y+N/yg&#13;
+CIjuc3hJF0i8Q5kD0AoHOJirrAdmbiHulfTjvc93rI1yzu5ffWlbxV7YjbCeKqxdUkZQoR5hhnDi&#13;
+zOamhJAfHI52tOxg+0WTTd//Fvf1QNdkEqydUvw+FUWuDTwojw0bWRkOqJmJp361At+avHlfo86L&#13;
+sHms9vZXOMg7wBjiWLv3dmN5Wv5GH2puKrOiKQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_66d92d5f-312e-478e-92e9-a6d547d75380" Target="#_c3b750cb-fcb7-4236-901d-bf0319a81600"><Timestamp>2024-02-25 19:10:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

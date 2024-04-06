@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_1_qPQNHXEe6Dubw9z92bSQ">
+    <contextParameter comment="" name="Chicago_01_FieldSeparator" prompt="Chicago_01_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\t&quot;" xmi:id="_1_qPQdHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_File" prompt="Chicago_01_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/Users/Nitish Belagali/Downloads/Food_Inspections_20240222.tsv" xmi:id="_1_qPQtHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_RowSeparator" prompt="Chicago_01_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" xmi:id="_1_qPQ9HXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_Header" prompt="Chicago_01_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_1_qPRNHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_Encoding" prompt="Chicago_01_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8" xmi:id="_1_qPRdHXEe6Dubw9z92bSQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Dev" xmi:id="_1_qPRtHXEe6Dubw9z92bSQ">
+    <contextParameter comment="" name="Chicago_01_FieldSeparator" prompt="Chicago_01_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\t&quot;" xmi:id="_1_qPR9HXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_File" prompt="Chicago_01_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/Users/Nitish Belagali/Downloads/Food_Inspections_20240222.tsv" xmi:id="_1_qPSNHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_RowSeparator" prompt="Chicago_01_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" xmi:id="_1_qPSdHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_Header" prompt="Chicago_01_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_1_qPStHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_Encoding" prompt="Chicago_01_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8" xmi:id="_1_qPS9HXEe6Dubw9z92bSQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Prod" xmi:id="_1_qPTNHXEe6Dubw9z92bSQ">
+    <contextParameter comment="" name="Chicago_01_FieldSeparator" prompt="Chicago_01_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\t&quot;" xmi:id="_1_qPTdHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_File" prompt="Chicago_01_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/Users/Nitish Belagali/Downloads/Food_Inspections_20240222.tsv" xmi:id="_1_qPTtHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_RowSeparator" prompt="Chicago_01_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" xmi:id="_1_qPT9HXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_Header" prompt="Chicago_01_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_1_qPUNHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_Encoding" prompt="Chicago_01_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8" xmi:id="_1_qPUdHXEe6Dubw9z92bSQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Test" xmi:id="_1_qPUtHXEe6Dubw9z92bSQ">
+    <contextParameter comment="" name="Chicago_01_FieldSeparator" prompt="Chicago_01_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\t&quot;" xmi:id="_1_qPU9HXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_File" prompt="Chicago_01_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/Users/Nitish Belagali/Downloads/Food_Inspections_20240222.tsv" xmi:id="_1_qPVNHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_RowSeparator" prompt="Chicago_01_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" xmi:id="_1_qPVdHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_Header" prompt="Chicago_01_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_1_qPVtHXEe6Dubw9z92bSQ"/>
+    <contextParameter comment="" name="Chicago_01_Encoding" prompt="Chicago_01_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8" xmi:id="_1_qPV9HXEe6Dubw9z92bSQ"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_638c917d-b672-4068-bc21-e8dc9b8dcc5e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H6QAsfnK2I9vml3hCCEJetSWkamcgdMtL+2Grzan6f8pno7ApV7UNcQ+e1inCJomjxzCxCO4pgG8&#13;
+B+6U0YoflQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4e2553a7-6578-4024-8bb4-44ac0e4b3707"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8v0NnC93jWLS0wMsb4gY0YzqOD4fQCI4TxVTSD4LdmXydNeh0tcaZLHY2Hqrd7rltqsLAL7Enxel&#13;
+19+g2SIKiA==</DigestValue></Reference></SignedInfo><SignatureValue>UBvAmYX6vHVoiVopvXwH4Y8611VOsuPxudwFTKErKsOLLvJKWJx+bssVMB9aaEXsKS7/4vZl/P1k&#13;
+AezGzJ4CvcQLniMvRhXx8v2vQnVf6e8eVKMu3WIXg6umM5jRD33UlyBm+6C38otX4ZQAzU79ORBB&#13;
+p9hRs4n0GFpqKcrMdoq1x1QAnWNcBLHQMzNsfcPm/GFztHTEmiS7eO0Mk8Q9YOwfA0C57Nqr8ZRu&#13;
+TZoS4J6nUlgfJK/vtiycFv8iK/miZ2ymlDBmnElEgfXa7llOqIUeE3f8g1C/TITumdLu1865sR5S&#13;
+vmgw4T0JSxxL8htgY1FPL5lVHaouFlmKV+71AA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4e2553a7-6578-4024-8bb4-44ac0e4b3707" Target="#_638c917d-b672-4068-bc21-e8dc9b8dcc5e"><Timestamp>2024-02-23 00:09:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
